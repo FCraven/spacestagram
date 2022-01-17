@@ -1,10 +1,24 @@
 import './App.css';
-
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 function App() {
-
   //How do I build this app?
+  const NASA_API_KEY = process.env.REACT_APP_NASA_API_KEY;
 
+  const [ pod , setPod ] = useState({})
+
+  useEffect(() => {
+    const getPictureOfTheDay = async () => {
+      const { data } = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}`);
+      setPod(data)
+    }
+
+    getPictureOfTheDay();
+
+  }, [])
+
+  console.log('pod-->', pod)
 // Fetch data from one of NASA’s APIs and display the resulting images
   // Search results should come from https://api.nasa.gov -
   // We’ve provided screenshots below of demo apps we built using the
@@ -42,7 +56,7 @@ function App() {
 
   return (
     <div className="App">
-
+      Hi, I';m your app
     </div>
   );
 }
