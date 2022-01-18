@@ -21,6 +21,17 @@ code {
     monospace;
 }
 
+.test-border {
+  border: 3px solid gold;
+}
+
+
+
+.space-font {
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 1px 1px 1px fuchsia, -1px -1px 1px white;
+}
+
 .flex {
   display: flex;
 }
@@ -60,6 +71,10 @@ code {
 
 .align-center {
   align-items: center;
+}
+
+.align-self-start {
+  align-self: flex-start;
 }
 
 .h-100 {

@@ -2,6 +2,7 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import {
+  Menu,
   MenuBar
 } from './components'
 import {
@@ -9,7 +10,7 @@ import {
 } from './pages';
 import {
   Routes,
-  Route
+  Route,
  } from "react-router-dom";
 
 function App() {
@@ -59,9 +60,9 @@ function App() {
   return (
     <div className="App" >
       <MenuBar setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
+      <Menu isMenuOpen={isMenuOpen} />
       <Routes>
-        <Route path='/' element={ <Home potd={potd} /> }>
-        </Route>
+        <Route path='/' element={ <Home potd={potd} /> } />
       </Routes>
     </div>
   );
