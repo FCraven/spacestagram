@@ -3,14 +3,13 @@ import { NavLink } from 'react-router-dom'
 
 const Menu =({isMenuOpen})=> {
   return (
-    <div>
+   <>
       {
         isMenuOpen && (
           <div id='menu'
               className='flex
                         flex-column
-                        justify-center
-                        align-center' >
+                        w-100' >
             <NavLink active to='/test'
                     className='menu-link'>
                     Test
@@ -22,7 +21,7 @@ const Menu =({isMenuOpen})=> {
           </div>
         )
       }
-    </div>
+    </>
   )
 }
 

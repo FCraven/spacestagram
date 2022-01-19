@@ -1,9 +1,9 @@
-import Hero from './Hero'
+import Potd from './Potd'
 import Menu from './Menu'
 import MenuBar from './MenuBar'
 
 export {
-  Hero,
+  Potd,
   Menu,
   MenuBar
 }

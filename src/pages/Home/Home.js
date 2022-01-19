@@ -1,11 +1,11 @@
-import { Hero } from '../../components'
+import { Potd } from '../../components'
 import './Home.css'
 
 const Home =({potd})=> {
 
   return (
     <div id='home' className='fill'>
-      <Hero potd={potd} />
+      <Potd potd={potd} />
     </div>
   )
 }

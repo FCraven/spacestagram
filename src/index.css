@@ -73,6 +73,10 @@ code {
   align-items: center;
 }
 
+.align-end {
+  align-items: flex-end;
+}
+
 .align-self-start {
   align-self: flex-start;
 }

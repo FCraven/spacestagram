@@ -1,0 +1,14 @@
+
+#info-container {
+  background-image: linear-gradient(
+    to top,
+    black,
+    rgba(0, 0, 0, 0.75),
+
+    rgba(0, 0, 0, 0.5),
+    transparent
+    );
+  backdrop-filter: blur(1px);
+  color: rgba(255, 240, 240, 0.794);
+  padding: 2rem;
+}

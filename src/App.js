@@ -58,12 +58,23 @@ function App() {
   // Create shareable links for each image
   // Add a date-picker to be able to browse photos starting from a specific date
   return (
-    <div className="App" >
-      <MenuBar setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
-      <Menu isMenuOpen={isMenuOpen} />
+    <div className="App">
+
+      <MenuBar
+        setIsMenuOpen={setIsMenuOpen}
+        isMenuOpen={isMenuOpen} />
+
+      {
+        isMenuOpen &&
+        <div id='menu-container'>
+          <Menu isMenuOpen={isMenuOpen} />
+        </div>
+      }
+
       <Routes>
         <Route path='/' element={ <Home potd={potd} /> } />
       </Routes>
+      
     </div>
   );
 }

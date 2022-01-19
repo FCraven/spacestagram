@@ -13,3 +13,9 @@
     transform: rotate(360deg);
   }
 }
+
+#menu-container {
+  height: 10rem;
+  width: 10rem;
+  background-color: blue;
+}
