@@ -39,7 +39,6 @@ function App() {
 
   console.log('potd-->', potd)
 
-
 //EACH CARD
 // Display descriptive data for each image:
 // Each image result should list:
@@ -72,9 +71,9 @@ function App() {
       }
 
       <Routes>
-        <Route path='/' element={ <Home potd={potd} /> } />
+        <Route path='/' element={ <Home favorites={favorites} potd={potd} /> } />
       </Routes>
-      
+
     </div>
   );
 }

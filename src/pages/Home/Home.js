@@ -1,11 +1,11 @@
 import { Potd } from '../../components'
 import './Home.css'
 
-const Home =({potd})=> {
+const Home =({potd, favorites})=> {
 
   return (
     <div id='home' className='fill'>
-      <Potd potd={potd} />
+      <Potd favorites={favorites} potd={potd} />
     </div>
   )
 }

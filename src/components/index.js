@@ -1,9 +1,12 @@
-import Potd from './Potd'
+import LikeButton from './LikeButton'
 import Menu from './Menu'
 import MenuBar from './MenuBar'
+import Potd from './Potd'
+
 
 export {
-  Potd,
+  LikeButton,
   Menu,
-  MenuBar
+  MenuBar,
+  Potd
 }
